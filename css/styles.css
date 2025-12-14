@@ -1,0 +1,26 @@
+/* [Same as previous message's CSS for clean, modular design] */
+body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0; background: #fff; color: #222; line-height: 1.6; }
+nav { background: #f8f8f8; border-bottom: 1px solid #ddd; position: sticky; top: 0; width: 100%; z-index: 1; }
+nav ul { display: flex; justify-content: center; list-style: none; padding: 1em; margin: 0; }
+nav li { margin: 0 1.5em; }
+nav a { color: #0066cc; text-decoration: none; font-weight: bold; }
+nav a:hover { text-decoration: underline; }
+main { max-width: 800px; margin: 0 auto; padding: 2em 1em; }
+.hero { text-align: center; padding: 3em 0; }
+.profile-photo { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 2px solid #ddd; }
+h1 { font-size: 2.5em; margin: 0.5em 0; }
+p { font-size: 1.1em; }
+.project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2em; }
+.project-card { background: #f8f8f8; padding: 1.5em; border-radius: 8px; border: 1px solid #ddd; }
+.project-card img { width: 100%; height: auto; border-radius: 4px; }
+footer { background: #f8f8f8; border-top: 1px solid #ddd; text-align: center; padding: 1em; margin-top: 2em; }
+.icon { width: 24px; height: 24px; margin: 0 0.5em; vertical-align: middle; }
+footer a { color: #0066cc; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul { flex-direction: column; align-items: center; }
+    nav li { margin: 0.5em 0; }
+    .project-grid { grid-template-columns: 1fr; }
+    main { padding: 1em; }
+}
