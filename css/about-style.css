@@ -1,0 +1,32 @@
+main { max-width: 800px; margin: 0 auto; padding: 2em 1em; }
+h1 { font-size: 2.5em; margin: 0.5em 0; text-align: center; color: #333; }
+
+/* Enhanced About page styles */
+.about-main {
+    background: #f9f9f9; /* Light background for subtle separation */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+    padding: 2em;
+}
+.about-main h2 {
+    font-size: 1.8em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    color: #0066cc; /* Accent color for headings (matches links) */
+    border-bottom: 1px solid #ddd; /* Underline for section separation */
+    padding-bottom: 0.3em;
+}
+.about-main p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.2em;
+}
+
+/* Responsive adjustments (for phones/tablets) */
+@media (max-width: 768px) {
+    .about-main { padding: 1em; }
+    h1 { font-size: 2em; }
+    .about-main h2 { font-size: 1.5em; }
+    .about-main p { font-size: 1em; line-height: 1.6; }
+}
