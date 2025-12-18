@@ -1,0 +1,59 @@
+body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0; background: #fff; color: #222; line-height: 1.6; }
+nav { background: #f8f8f8; border-bottom: 1px solid #ddd; position: sticky; top: 0; width: 100%; z-index: 1; }
+nav ul { display: flex; justify-content: center; list-style: none; padding: 1em; margin: 0; }
+nav li { margin: 0 1.5em; }
+nav a { color: #0066cc; text-decoration: none; font-weight: bold; }
+nav a:hover { text-decoration: underline; }
+main { max-width: 800px; margin: 0 auto; padding: 2em 1em; }
+h1 { font-size: 2.5em; margin: 0.5em 0; text-align: center; }
+footer { background: #f8f8f8; border-top: 1px solid #ddd; text-align: center; padding: 1em; margin-top: 2em; }
+.icon { width: 24px; height: 24px; margin: 0 0.5em; vertical-align: middle; }
+footer a { color: #0066cc; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible columns for 1-2+ cards */
+    gap: 2em; /* More spacing between cards */
+    margin-top: 1em;
+}
+.project-card {
+    background: #f8f8f8;
+    padding: 1.5em;
+    border-radius: 12px; /* Softer corners */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+}
+.project-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+.project-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded image corners */
+    margin-bottom: 1em;
+    transition: transform 0.3s ease; /* Zoom effect setup */
+}
+.project-card:hover img {
+    transform: scale(1.05); /* Slight zoom on hover for visual interest */
+}
+.project-card p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Responsive adjustments (for phones/tablets, 10 pts) */
+@media (max-width: 768px) {
+    nav ul { flex-direction: column; align-items: center; }
+    nav li { margin: 0.5em 0; }
+    .project-grid { grid-template-columns: 1fr; gap: 1.5em; } /* Stack cards vertically */
+    main { padding: 1em; }
+    .project-card { padding: 1em; }
+}
